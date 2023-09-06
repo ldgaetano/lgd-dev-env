@@ -1,2 +1,2 @@
 # lgd-dev-env-ubuntu
-Custom image for a Docker development environment.
+Custom images for a Docker development environments.

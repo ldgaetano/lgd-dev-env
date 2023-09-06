@@ -1,0 +1,8 @@
+version: '3'
+services:
+  container:
+    image: lgd-python-dev
+    ports:
+      - "8888:8888"
+    volumes:
+      - C:\Users\Luca\development:/app/development

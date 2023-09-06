@@ -1,0 +1,19 @@
+version: '3'
+services:
+  medusa:
+    build: .
+    ports:
+      - "7000:7000"
+      - "7001:7001"
+      - "8000:8000"
+    volumes:
+      - C:\Users\Luca\development\work\zengate\palmyra-backend:/app
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379 # The hostname "redis" is defined by the service name below
+
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
